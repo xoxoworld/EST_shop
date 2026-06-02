@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMall Common</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top container">
+      <a href="./index.html" class="logo" aria-label="ShopMall home">logo</a>
+      <form class="search-form" action="#" method="get">
+        <label for="common-search" class="sr-only">상품 검색</label>
+        <span class="search-icon" aria-hidden="true"></span>
+        <input id="common-search" type="search" placeholder="상품을 검색해보세요">
+      </form>
+      <div class="user-actions">
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+        <a href="#" class="cart-button" aria-label="장바구니">
+          <span class="cart-icon" aria-hidden="true"></span>
+          <span class="cart-count">3</span>
+        </a>
+      </div>
+    </div>
+    <nav class="category-nav" aria-label="상품 카테고리">
+      <div class="container">
+        <ul>
+          <li><a href="#">전체상품</a></li>
+          <li><a href="#">패션의류</a></li>
+          <li><a href="#">디지털</a></li>
+          <li><a href="#">홈&amp;리빙</a></li>
+          <li><a href="#">뷰티</a></li>
+          <li><a href="#">스포츠</a></li>
+          <li><a href="#">도서</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="common-preview container">
+    <h1>공통 헤더 / 푸터</h1>
+    <p>이 파일은 공통 레이아웃 확인용입니다. 실제 메인 페이지는 index.html을 사용하세요.</p>
+    <a class="btn btn-primary" href="./index.html">메인 페이지 보기</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <p>© 2024 ShopMall. All rights reserved.</p>
+      <ul class="payment-list" aria-label="지원 결제 수단">
+        <li>visa</li>
+        <li>mc</li>
+        <li>p</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

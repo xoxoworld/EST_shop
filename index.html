@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopMall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top container">
+        <a href="./index.html" class="logo" aria-label="ShopMall home">logo</a>
+        <form class="search-form" action="#" method="get">
+          <label for="search" class="sr-only">상품 검색</label>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="search" type="search" placeholder="상품을 검색해보세요" />
+        </form>
+        <div class="user-actions">
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+          <a href="#" class="cart-button" aria-label="장바구니">
+            <span class="cart-icon" aria-hidden="true"></span>
+            <span class="cart-count">3</span>
+          </a>
+        </div>
+      </div>
+      <nav class="category-nav" aria-label="상품 카테고리">
+        <div class="container">
+          <ul>
+            <li><a href="#">전체상품</a></li>
+            <li><a href="#">패션의류</a></li>
+            <li><a href="#">디지털</a></li>
+            <li><a href="#">홈&amp;리빙</a></li>
+            <li><a href="#">뷰티</a></li>
+            <li><a href="#">스포츠</a></li>
+            <li><a href="#">도서</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1>새로운 시즌특별한 할인</h1>
+          <p>최대 70% 할인된 프리미엄 상품들을 만나보세요</p>
+          <a href="#products" class="btn btn-primary">지금 쇼핑하기</a>
+        </div>
+      </section>
+
+      <section class="shop-section container" id="products">
+        <aside class="filter-panel" aria-label="상품 필터">
+          <h2>필터</h2>
+          <fieldset>
+            <legend>카테고리</legend>
+            <label><input type="checkbox" name="category" value="all" /> 전체</label>
+            <label><input type="checkbox" name="category" value="fashion" /> 패션의류</label>
+            <label><input type="checkbox" name="category" value="digital" /> 디지털</label>
+            <label><input type="checkbox" name="category" value="home" /> 홈&amp;리빙</label>
+          </fieldset>
+          <fieldset>
+            <legend>가격대</legend>
+            <label><input type="radio" name="price" value="all" /> 전체</label>
+            <label><input type="radio" name="price" value="low" /> 10만원 이하</label>
+            <label><input type="radio" name="price" value="middle" /> 10-50만원</label>
+            <label><input type="radio" name="price" value="high" /> 50만원 이상</label>
+          </fieldset>
+          <fieldset>
+            <legend>브랜드</legend>
+            <label><input type="checkbox" name="brand" value="samsung" /> 삼성</label>
+            <label><input type="checkbox" name="brand" value="lg" /> LG</label>
+            <label><input type="checkbox" name="brand" value="nike" /> 나이키</label>
+          </fieldset>
+          <button type="button" class="btn btn-muted">필터 초기화</button>
+        </aside>
+
+        <section class="products-area" aria-labelledby="products-title">
+          <div class="products-header">
+            <h2 id="products-title">인기 상품</h2>
+            <div class="products-tools">
+              <span>총 248개 상품</span>
+              <label for="sort" class="sr-only">정렬</label>
+              <select id="sort" name="sort">
+                <option>인기순</option>
+                <option>최신순</option>
+                <option>낮은 가격순</option>
+                <option>높은 가격순</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="product-grid">
+            <!-- <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="프리미엄 무선 헤드폰">
+            <div class="product-info">
+              <h3>프리미엄 무선 헤드폰</h3>
+              <p>소니 WH-1000XM4</p>
+              <div class="product-bottom">
+                <strong>299,000원</strong>
+                <button type="button" class="cart-add" aria-label="프리미엄 무선 헤드폰 장바구니 담기"></button>
+              </div>
+            </div>
+          </article> -->
+          </div>
+
+          <nav class="pagination" aria-label="페이지">
+            <a href="#" aria-label="이전 페이지">‹</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">10</a>
+            <a href="#" aria-label="다음 페이지">›</a>
+          </nav>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <p>© 2024 ShopMall. All rights reserved.</p>
+        <ul class="payment-list" aria-label="지원 결제 수단">
+          <li>visa</li>
+          <li>mc</li>
+          <li>p</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
