@@ -1,8 +1,14 @@
 .hero {
   min-height: 384px;
   background:
-    linear-gradient(90deg, rgba(244, 246, 248, 0.92) 0%, rgba(244, 246, 248, 0.62) 42%, rgba(244, 246, 248, 0.18) 100%),
-    url("https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1800&q=80") center / cover;
+    linear-gradient(
+      90deg,
+      rgba(244, 246, 248, 0.92) 0%,
+      rgba(244, 246, 248, 0.62) 42%,
+      rgba(244, 246, 248, 0.18) 100%
+    ),
+    url("https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1800&q=80")
+      center / cover;
 }
 
 .hero-inner {
@@ -141,7 +147,7 @@
 
 .pagination a,
 .pagination span {
-  display: grid;
+  display: inline-grid;
   min-width: 40px;
   height: 40px;
   place-items: center;
@@ -152,6 +158,13 @@
 .pagination a.active {
   background: var(--color-primary);
   color: var(--color-primary-text);
+}
+.pagination a[aria-label] {
+  font-size: 2em;
+}
+.pagination a.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 @media (max-width: 1024px) {
