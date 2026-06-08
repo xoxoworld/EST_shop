@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopMall - 상품 상세</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top container">
+        <a href="./index.html" class="logo" aria-label="ShopMall home">logo</a>
+        <form class="search-form" action="#" method="get">
+          <label for="search" class="sr-only">상품 검색</label>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="search" type="search" placeholder="상품을 검색해보세요" />
+        </form>
+        <div class="user-actions">
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+          <a href="cart.html" class="cart-button" aria-label="장바구니">
+            <span class="cart-icon" aria-hidden="true"></span>
+            <span class="cart-count">3</span>
+          </a>
+        </div>
+      </div>
+      <nav class="category-nav" aria-label="상품 카테고리">
+        <div class="container">
+          <ul>
+            <li><a href="./index.html">전체상품</a></li>
+            <li><a href="#">패션의류</a></li>
+            <li><a href="#">디지털</a></li>
+            <li><a href="#">홈&amp;리빙</a></li>
+            <li><a href="#">뷰티</a></li>
+            <li><a href="#">스포츠</a></li>
+            <li><a href="#">도서</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="detail-main">
+      <section class="detail-section container" aria-labelledby="product-title">
+        <div class="product-detail">
+          <section class="product-gallery" aria-label="상품 이미지">
+            <div class="main-image">
+              <img src="" alt="" />
+            </div>
+            <!-- <div class="thumbnail-list" aria-label="상품 썸네일">
+              <button type="button" aria-label="첫 번째 상품 이미지">
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80"
+                  alt=""
+                />
+              </button>
+              <button type="button" aria-label="두 번째 상품 이미지">
+                <img
+                  src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=400&q=80"
+                  alt=""
+                />
+              </button>
+              <button type="button" aria-label="세 번째 상품 이미지">
+                <img
+                  src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=400&q=80"
+                  alt=""
+                />
+              </button>
+              <button type="button" aria-label="네 번째 상품 이미지">
+                <img
+                  src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=400&q=80"
+                  alt=""
+                />
+              </button>
+            </div> -->
+          </section>
+
+          <section class="product-summary" aria-label="상품 구매 정보">
+            <p class="product-category">오디오</p>
+            <h1 class="product-title" id="product-title">프리미엄 무선 헤드폰</h1>
+            <p class="product-description">
+              뛰어난 음질과 편안한 착용감을 자랑하는 프리미엄 무선 헤드폰
+            </p>
+
+            <div class="price-row">
+              <span class="discount-rate">30%</span>
+              <strong class="sale-price">299,000원</strong>
+              <span class="origin-price">429,000원</span>
+            </div>
+
+            <ul class="benefit-list">
+              <li>무료배송</li>
+              <li>1년 품질보증</li>
+            </ul>
+
+            <div class="option-group">
+              <p class="option-title">색상</p>
+              <div class="color-options" aria-label="색상 선택">
+                <button type="button" style="--swatch: #000000" aria-label="블랙"></button>
+                <button type="button" style="--swatch: #ffffff" aria-label="화이트"></button>
+                <button type="button" style="--swatch: #4b5563" aria-label="그레이"></button>
+              </div>
+            </div>
+
+            <div class="option-group">
+              <label class="option-title" for="quantity">수량</label>
+              <div class="quantity-control">
+                <button id="minus" type="button" aria-label="수량 줄이기">-</button>
+                <input id="quantity" type="text" value="1" aria-label="수량" />
+                <button id="plus" type="button" aria-label="수량 늘리기">+</button>
+              </div>
+            </div>
+
+            <div class="purchase-actions">
+              <button id="addcart" type="button" class="btn btn-outline">장바구니 담기</button>
+              <button type="button" class="btn btn-primary">바로 구매하기</button>
+            </div>
+          </section>
+        </div>
+
+        <nav class="detail-tabs" aria-label="상품 상세 탭">
+          <a href="#product-info" class="active">상품 상세정보</a>
+          <a href="#reviews">리뷰 (24)</a>
+          <a href="#shipping">배송/교환/반품</a>
+        </nav>
+        <div class="tab-content">
+          <section class="detail-content active" id="product-info" aria-labelledby="feature-title">
+            <div class="detail-visual">
+              <img
+                src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?auto=format&fit=crop&w=1600&q=80"
+                alt="프리미엄 무선 헤드폰 착용 이미지"
+              />
+            </div>
+            <h2 class="feature-title" id="feature-title">제품 특징</h2>
+            <ul class="feature-list">
+              <li>액티브 노이즈 캔슬링 기술로 몰입감 있는 청취 경험</li>
+              <li>최대 30시간 연속 재생 가능한 대용량 배터리</li>
+              <li>고급 가죽 소재의 편안한 이어패드</li>
+              <li>블루투스 5.0 지원으로 안정적인 연결</li>
+              <li>접이식 디자인으로 휴대성 극대화</li>
+            </ul>
+          </section>
+          <section class="detail-content" id="reviews">
+            <h2>리뷰</h2>
+          </section>
+          <section class="detail-content" id="shipping">
+            <h2>배송/교환/반품</h2>
+          </section>
+        </div>
+      </section>
+
+      <section class="recommend-section container" aria-labelledby="recommend-title">
+        <h2 class="recommend-title" id="recommend-title">추천 상품</h2>
+        <div class="recommend-grid">
+          <!-- <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=500&q=80"
+              alt="프리미엄 무선 이어폰"
+            />
+            <div class="product-info">
+              <h3><a href="#">프리미엄 무선 이어폰</a></h3>
+              <p>오디오</p>
+              <div class="product-bottom">
+                <strong>189,000원</strong>
+                <button
+                  type="button"
+                  class="cart-add"
+                  aria-label="프리미엄 무선 이어폰 장바구니 담기"
+                ></button>
+              </div>
+            </div>
+          </article> -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <p>© 2024 ShopMall. All rights reserved.</p>
+        <ul class="payment-list" aria-label="지원 결제 수단">
+          <li>visa</li>
+          <li>mc</li>
+          <li>p</li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="js/product.js"></script>
+  </body>
+</html>
