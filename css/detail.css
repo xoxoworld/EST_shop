@@ -329,3 +329,240 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Product Details Tab Custom Styling */
+.product-description-full {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 32px;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 48px;
+  border-top: 2px solid var(--color-text);
+  font-size: 14px;
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.spec-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #4b5563;
+  width: 20%;
+  text-align: left;
+}
+
+.spec-table td {
+  color: #111827;
+  width: 30%;
+}
+
+.product-gallery-more {
+  margin-top: 48px;
+}
+
+.product-gallery-more h3 {
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: var(--color-text);
+}
+
+.detail-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.detail-gallery-item {
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: #f9fafb;
+  border: 1px solid var(--color-border);
+}
+
+.detail-gallery-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.detail-gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Reviews Styling */
+.review-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: #f9fafb;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.rating-large {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.rating-stars-large {
+  font-size: 24px;
+  color: #fbbf24;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.rating-count {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.reviews-list {
+  display: grid;
+  gap: 24px;
+}
+
+.review-card {
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.review-author-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+.reviewer-email {
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-stars {
+  color: #fbbf24;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.review-date {
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.review-comment {
+  margin: 0;
+  color: #374151;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.empty-reviews {
+  padding: 48px 0;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 16px;
+  background: #f9fafb;
+  border-radius: var(--radius-card);
+  border: 1px dashed var(--color-border);
+}
+
+/* Shipping Info Styling */
+.shipping-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.shipping-info-grid .info-item {
+  padding: 28px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.shipping-info-grid .info-item h3 {
+  margin: 0 0 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.shipping-info-grid .info-item p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+.shipping-info-grid .info-item p:last-child {
+  margin-bottom: 0;
+}
+
+.shipping-info-grid .info-item strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .shipping-info-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .spec-table th, 
+  .spec-table td {
+    padding: 10px 12px;
+  }
+}
+

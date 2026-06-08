@@ -392,3 +392,45 @@
     height: 64px;
   }
 }
+
+/* Checkbox interactivity overrides */
+.check-box {
+  background: #fff !important;
+  border: 1px solid #d1d5db !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.check-box::before {
+  display: none !important;
+}
+
+.check-box.checked {
+  background: #4f46e5 !important;
+  border-color: #4f46e5 !important;
+}
+
+.check-box.checked::before {
+  display: inline-block !important;
+}
+
+/* Empty cart layout styling */
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+.empty-cart p {
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+.empty-cart .btn {
+  max-width: 200px;
+}
+
